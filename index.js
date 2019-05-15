@@ -8,6 +8,7 @@ let users = {};
 client.on(`ready`, () => {
     console.log("I'm working!");
     client.user.setActivity("за стадом", {type: "WATCHING"});
+    client.guilds.get("578167319893901313").channels.get("578269062010896394").send(``\[BOT] Бот успешно запущен. Ping: ${client.ping}`\`);
 });
 
 client.on('message', async message => {
